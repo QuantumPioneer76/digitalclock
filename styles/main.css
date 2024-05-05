@@ -1,0 +1,54 @@
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    background-color: darkgreen;
+}
+header{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+main{
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+    /* background-color: dark green; */
+}
+.digitalclock{
+    display:flex;
+    flex-direction:row;
+    gap:0.25em;
+    color: white;
+    font-size: 4vw;
+    max-height: 7vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+}
+footer{
+    text-align:center;
+    color: white;
+}
+@media (max-width: 676px){
+    header{
+        display: none;
+    }
+    .digitalclock h3#colon1, h3#colon2{
+        display: none;
+    }
+    .digitalclock{
+        display: flex;
+        max-height: fit-content;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (width > 676px){
+    .digitalclock h3#line1,h3#line2,h3#line3,h3#line4{
+        display: none;
+    }
+}
